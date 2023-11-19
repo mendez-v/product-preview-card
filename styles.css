@@ -1,0 +1,241 @@
+@font-face {
+  font-family: "Fraunces";
+  src: url("./assets/fonts/Fraunces-Bold.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("./assets/fonts/Montserrat-Bold.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;font-weight: 700;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("./assets/fonts/Montserrat-Medium.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 500;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+body, h1, p {
+  margin: 0;
+}
+img {
+  display: block;
+  max-inline-size: 100%;
+  block-size: auto;
+  font-style: italic;
+}
+
+body {
+  min-block-size: 100vh;
+  min-block-size: 100svh;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  place-items: center;
+  background-color: var(--cream);
+}
+
+:root {
+  --primary: hsl(212, 21%, 14%);
+  --secondary: hsl(228, 12%, 48%);
+  --neutral: hsl(0, 0%, 100%);
+  --cyan-30: hsl(158, 36%, 37%);
+  --cyan-20: hsl(158 43% 18%);
+  --cream: hsl(30, 38%, 92%);
+}
+
+.ff-mont {
+  font-family: "Montserrat";
+}
+.ff-fraun {
+  font-family: "Fraunces";
+}
+.fw-500 {
+  font-weight: 500;
+}
+.fw-700 {
+  font-weight: 700;
+}
+.fs-12 {
+  font-size: 12px;
+}
+.fs-13 {
+  font-size: 13px;
+}
+.fs-14 {
+  font-size: 14px;
+}
+.fs-32 {
+  font-size: 32px;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.clr-pri {
+  color: var(--primary);
+}
+.clr-sec {
+  color: var(--secondary);
+}
+
+.card {
+  --radius: .63em;
+
+  inline-size: 91.47vw;
+  max-inline-size: 25rem;
+  min-inline-size: 18.75rem;
+  background-color: var(--neutral);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 .5em 1em -.5em hsl(212, 21%, 14%, .25);
+}
+@media (height < 41.68rem) {
+  .card {
+    margin-block: 3em;
+  }
+}
+.card__image {
+  background-color: hsl(212, 21%, 14%,.11);
+}
+.card__image--effect {
+  mix-blend-mode: multiply;
+  filter: contrast(1.1);
+}
+.card__info {
+  padding: 1.4em 1.5em 1.5em;
+}
+.card__category {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.card__title {
+  margin-top: .3em;
+  max-inline-size: 15ch;
+  text-transform: capitalize;
+  line-height: 1;
+  letter-spacing: -.35px;
+}
+.card__description {
+  margin-top: 1.35em;
+  max-inline-size: 32ch;
+  line-height: 1.64;
+}
+
+.price-wrapper {
+  margin-top: .85em;
+  gap: 1.1em;
+}
+.price__discount {
+  color: var(--cyan-30);
+}
+.price__no-discount {
+  margin-top: .4em;
+}
+
+.card__btn {
+  --radius: .58em;
+  
+  inline-size: 100%;
+  margin-top: 1em;
+  padding-block: 1.07em;
+  justify-content: center;
+  gap: .8em;
+  color: var(--neutral);
+  background-color: var(--cyan-30);
+  border: .1em solid transparent;
+  border-radius: var(--radius);
+  box-shadow: 0 .5em 1em -.5em var(--cyan-30);
+  transition: background-color .3s ease-in-out, transform .2s ease;
+  cursor: grab;
+}
+
+.attribution {
+  display: block;
+  margin-top: -1.56rem;
+  padding-bottom: .5em;
+  text-align: center;
+}
+@media (height > 46rem) {
+  .attribution {
+    margin-top: -2.3rem;
+  }
+}
+.attribution__link {
+  margin-inline: .3em;
+  text-decoration: none;
+  color: var(--cyan-20);
+  position: relative;
+  transition: inline-size .3s ease-in-out;
+}
+
+@media (width >= 40rem) {
+  .card {
+    max-inline-size: 37.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card__info {
+    padding: 1.9em 2em;
+  }
+  .card__title {
+    margin-top: .55em;
+  }
+  .card__description {
+    margin-top: 1.91em;
+  }
+  .price-wrapper {
+    margin-top: 1.15em;
+  }
+  .card__btn {
+    margin-top: 1.7em;
+  }
+}
+
+.attribution__link::after {
+  content: "";
+  position: absolute;
+  bottom: -.2em;
+  right: 0;
+  inline-size: 100%;
+  block-size: .1em;
+  background-color: currentColor;
+  transition: inline-size .3s ease-in-out;
+}
+
+.card__btn:active,
+.card__btn:focus-visible {
+  transform: scale(.98);
+  cursor: grabbing;
+  background-color: var(--cyan-20);
+}
+
+.card__btn:focus-visible,
+.attribution__link:focus-visible {
+  outline: .15em dotted var(--cyan-20);
+  outline-offset: .15em;
+}
+
+@media (hover:hover) {
+  .card__btn:hover {
+    background-color: var(--cyan-20);
+  }
+  .attribution__link:hover::after {
+    inline-size: 0;
+    left: 0;
+  }
+}
+.attribution__link:focus-visible::after {
+  outline-offset: .3em;
+  inline-size: 0;
+  left: 0;
+}
