@@ -178,7 +178,7 @@ body {
   transition: inline-size .3s ease-in-out;
 }
 
-@media (width >= 40rem) {
+@media (width >= 40.875rem) {
   .card {
     max-inline-size: 37.5rem;
     display: grid;
@@ -207,7 +207,7 @@ body {
   bottom: -.2em;
   right: 0;
   inline-size: 100%;
-  block-size: .1em;
+  block-size: .15em;
   background-color: currentColor;
   transition: inline-size .3s ease-in-out;
 }
