@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gabrielle Essence | Perfume</title>
+
+  <link rel="icon" href="./assets/icons/favicon.png">
+  <link rel="apple-touch-icon" href="./assets/icons/favicon.png">
+
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main>
+    <div class="card" role="article">
+      <picture class="card__image">
+        <source media="(min-width: 40rem)" srcset="./assets/images/image-product-desktop.webp">
+        <img class="card__image--effect" src="./assets/images/image-product-mobile.webp" alt="A bottle of Channel perfume on a table decorated with beautiful leaves.">
+      </picture>
+      <section class="card__info">
+        <span class="card__category ff-mont fw-500 fs-12 clr-sec">perfume</span>
+        <h1 class="card__title ff-fraun fw-700 fs-32 clr-pri">gabrielle essence eau de parfum</h1>
+        <p class="card__description ff-mont fw-500 fs-14 clr-sec">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+        <div class="price-wrapper flex">
+          <span class="price__discount ff-fraun fw-700 fs-32">$149.99</span>
+          <del class="price__no-discount ff-mont fw-500 fs-13 clr-sec">$169.99</del>
+        </div>
+        <button class="card__btn ff-mont fw-700 fs-14 flex">
+          <img src="./assets/icons/icon-cart.svg" alt="" aria-hidden="true" class="icon">
+          Add to Cart
+        </button>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <small class="attribution ff-mont fw-500 clr-pri">
+      Challenge by <a href="https://www.frontendmentor.io/challenges" class="attribution__link fw-700" target="_blank" rel="noreferrer">Frontend Mentor</a> - Coded by <a href="https://github.com/mendez-v/product-preview-card" class="attribution__link fw-700" target="_blank" rel="noreferrer">vimp</a> ✨
+    </small>
+  </footer>
+</body>
+</html>
