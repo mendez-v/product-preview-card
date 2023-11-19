@@ -41,7 +41,7 @@ Users should be able to:
 
 [Demo](https://mendez-v.github.io/product-preview-card/) 👀
 
-<!-- [Frontend Mentor](https://your-live-site-url.com) 👀 -->
+[Frontend Mentor](https://www.frontendmentor.io/solutions/product-preview-card-component-using-grid-flexbox-utility-classes-MaUxfFfziw) 👀
 
 ## My process
 
