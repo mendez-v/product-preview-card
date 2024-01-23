@@ -39,9 +39,11 @@ Users should be able to:
 
 ### Links
 
-[Demo](https://mendez-v.github.io/product-preview-card/) 👀
+[Live Site](https://mendez-v.github.io/product-preview-card/) 👀
 
-[Frontend Mentor](https://www.frontendmentor.io/solutions/product-preview-card-component-using-grid-flexbox-utility-classes-MaUxfFfziw) 👀
+[Solution in Frontend Mentor](https://www.frontendmentor.io/solutions/product-preview-card-component-using-grid-flexbox-utility-classes-MaUxfFfziw) 👀
+
+[Challenge Repository](https://github.com/mendez-v/frontend-mentor-challenges) 👀
 
 ## My process
 
